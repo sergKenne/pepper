@@ -8,6 +8,7 @@
 }
 
 $main_color: #35373b;
+$white_color: #ffffff;
 
 html {
   font-size: 100%;
@@ -18,4 +19,172 @@ body {
  font-family: "Roboto", sans-serif;
  font-style: normal;
  font-size: 16px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+//COMPONENTS
+.btn {
+  all: unset;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 14px;
+  border-radius: 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+  transition: background-color, border-color, color, stroke, opacity, box-shadow;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &--add {
+    background-color: #ff7900;
+    box-shadow: 0 0 0 0 #ff7900;
+    &:hover {
+      background-color: #ff9300;
+      box-shadow: 0 0 0 0 #ff9300;
+    }
+    &:active {
+      background-color: #e56e00;
+    }
+  }
+  &--register {
+    background-color: #ffffff1a;
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.2);
+    }
+    &:active {
+      background-color: hsla(0, 0%, 100%, 0.1);
+    }
+    &:disabled {
+      --background-color: hsla(0, 0%, 100%, 0.1);
+      color: hsla(0, 0%, 100%, 0.2);
+    }
+  }
+  &--menu {
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.8);
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.2);
+      color: #ffffff;
+    }
+    &:active {
+      background-color: hsla(0, 0%, 100%, 0.1);
+      color: hsla(0, 0%, 100%, 0.5);
+    }
+    &:disabled {
+      background-color: transparent;
+      color: hsla(0, 0%, 100%, 0.2);
+    }
+  }
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+  
+}
+
+//HEADER
+.header {
+  background-color: $main_color;
+  color: $white_color;
+  height: 56px;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: $white_color;
+    margin-right: 8px;
+  }
+  &__logo-img {
+    width: 36px;
+    margin-right: 8px;
+  }
+  &__form {
+    position: relative;
+  }
+  &__form-icon {
+    color: #8f949b;
+    margin-right: 4px;
+    position: absolute;
+    left: 8px;
+    top: 6px;
+  }
+  &__form-input {
+    border: none;
+    outline: none;
+    width: 340px;
+    height: 35px;
+    background-color: $white_color;
+    border-radius: 35px;
+    padding-left: 40px;
+    padding-right: 12px;
+    margin-right: 7px;
+    font-size: 1rem;
+    font-weight: 400;
+    &::placeholder {
+      color: #8f949b;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    &:focus {
+      box-shadow: 0 0 0 4px #ff7900;
+    }
+  }
+  &__register-btn {
+    margin-left: 7px;
+    @media (max-width: 1150px) {
+      padding: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      justify-content: center;
+    }
+    .btn__text {
+      @media screen and (max-width: 1150px) {
+        display: none;
+      }
+    }
+    
+  }
+  &__add-btn {
+    margin-left: 7px;
+    @media (max-width: 1150px) {
+      padding: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      justify-content: center;
+    }
+    .btn__text {
+      @media screen and (max-width: 1150px) {
+        display: none;
+      }
+    }  
+  }
 }
