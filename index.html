@@ -13,31 +13,73 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <div class="header__content">
-          <div class="header__left">
-            <a href="/" class="header__logo">
-              <img src="img/logo.png" alt="logo" class="header__logo-img">
-              <span>Jenildik.kz</span>
-            </a>
-            <button class="btn btn--menu header__menu-btn">
-              <span class="btn__text">Меню</span>
-              <span class="material-symbols-outlined btn__icon">arrow_drop_down</span>
+        <div class="header__inner">
+          <div class="header__content">
+            <button class="btn header__mobile-menu-btn">
+                <span class="material-symbols-outlined btn__icon">menu</span>
             </button>
+            <div class="header__left">
+              <a href="/" class="header__logo">
+                <img src="img/logo.png" alt="logo" class="header__logo-img">
+                <span>Jenildik.kz</span>
+              </a>
+              <button class="btn header__menu-btn">
+                <span class="btn__text">Меню</span>
+                <span class="material-symbols-outlined btn__icon">arrow_drop_down</span>
+              </button>
+            </div>
+            <div class="header__right">
+              <form action="" class="header__form activ">
+                <div class="header__form-content">
+                  <span class="material-symbols-outlined header__form-icon activ">search</span>
+                  <input class="header__form-input activ" type="search" placeholder="Пойск Брендов, Товаров и т.д.">
+                </div class="header__form-content">
+              </form>
+              <button class="btn btn--grey header__register-btn">
+                <span class="material-symbols-outlined btn__icon">person</span>
+                <span class="btn__text">Зарегистрироваться/Войти</span>
+              </button>
+              <button class="btn btn--orange header__add-btn">
+                <span class="material-symbols-outlined btn__icon">add</span>
+                <span class="btn__text">Добавить</span>
+              </button>
+            </div>
           </div>
-          <div class="header__right">
-            <form action="" class="header__form">
-              <span class="material-symbols-outlined header__form-icon">search</span>
-              <input class="header__form-input" type="search" placeholder="Пойск Брендов, Товаров и т.д.">
-            </form>
-            <button class="btn btn--register header__register-btn">
-              <span class="material-symbols-outlined btn__icon">person</span>
-              <span class="btn__text">Зарегистрироваться/Войти</span>
-            </button>
-            <button class="btn btn--add header__add-btn">
-              <span class="material-symbols-outlined btn__icon">add</span>
-              <span class="btn__text">Добавить</span>
-            </button>
-          </div>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="btn header__menu-link" >
+                <span class="material-symbols-outlined btn__icon header__menu-icon">home</span>
+                <span class="btn__text">Домашняя страница / Все скидки</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">content_cut</span>
+                <span class="btn__text">Промокоды</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">forum</span>
+                <span class="btn__text">Обсуждение</span>
+              </a>
+            </li>
+            <div class="header__menu-divider"></div>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">snippet_folder</span>
+                <span class="btn__text">Все категории</span>
+              </a>
+            </li>
+            <div class="header__menu-divider"></div>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">store</span>
+                <span class="btn__text">Все магазины</span>
+              </a>
+            </li>
+            
+          </ul>
         </div>
       </div>
     </header>
@@ -47,7 +89,14 @@
     <footer class="footer">
     
     </footer>
+    <div class="modal">
+      <div class="modal__inner">
+        <span class="material-symbols-outlined modal__btn-close">close</span>
+        <div class="modal__content"></div>
+      </div>
+    </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
