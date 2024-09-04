@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepper</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="fonts/stylesheet.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__content">
+            <button class="btn header__mobile-menu-btn">
+                <span class="material-symbols-outlined btn__icon">menu</span>
+            </button>
+            <div class="header__left">
+              <a href="/" class="header__logo">
+                <img src="img/logo.png" alt="logo" class="header__logo-img">
+                <span>Jenildik.kz</span>
+              </a>
+              <button class="btn header__menu-btn">
+                <span class="btn__text">Меню</span>
+                <span class="material-symbols-outlined btn__icon">arrow_drop_down</span>
+              </button>
+            </div>
+            <div class="header__right">
+              <form action="" class="header__form activ">
+                <div class="header__form-content">
+                  <span class="material-symbols-outlined header__form-icon activ">search</span>
+                  <input class="header__form-input activ" type="search" placeholder="Пойск Брендов, Товаров и т.д.">
+                </div class="header__form-content">
+              </form>
+              <button class="btn btn--grey header__register-btn">
+                <span class="material-symbols-outlined btn__icon">person</span>
+                <span class="btn__text">Зарегистрироваться/Войти</span>
+              </button>
+              <button class="btn btn--orange header__add-btn">
+                <span class="material-symbols-outlined btn__icon">add</span>
+                <span class="btn__text">Добавить</span>
+              </button>
+            </div>
+          </div>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="btn header__menu-link" >
+                <span class="material-symbols-outlined btn__icon header__menu-icon">home</span>
+                <span class="btn__text">Домашняя страница / Все скидки</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">content_cut</span>
+                <span class="btn__text">Промокоды</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">forum</span>
+                <span class="btn__text">Обсуждение</span>
+              </a>
+            </li>
+            <div class="header__menu-divider"></div>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">snippet_folder</span>
+                <span class="btn__text">Все категории</span>
+              </a>
+              <ul class="header__submenu-list">
+                <li class="header__submenu-item">
+                  <a href="#" class="header__submenu-link">Электроника</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="header__submenu-link">Консоли и Видеоигры</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="header__submenu-link">Дом и Квартира</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="header__submenu-link">Мода</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="header__submenu-link">Здоровье и Красота</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="header__submenu-link">Услуги и Подписки</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="header__submenu-link">Ремонт и Строительство</a>
+                </li>
+              </ul>
+            </li>
+            <div class="header__menu-divider"></div>
+            <li class="header__menu-item">
+              <a class="btn header__menu-link" href="#">
+                <span class="material-symbols-outlined btn__icon header__menu-icon">store</span>
+                <span class="btn__text">Все магазины</span>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <nav class="main__breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="#">Домашняя страница</a>
+            </li>
+            <li class="breadcrumb__item active">
+              <a class="breadcrumb__link" href="#">Здоровье и Красота</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="detail main__detail">
+        <div class="detail__card">
+          <div class="detail__card-picture">
+            <img class="detail__card-img" src="https://static.pepper.ru/threads/raw/vSK3P/496772_1/re/300x300/qt/60/496772_1.jpg" alt="product">
+            <div class="detail__card-img-btns">
+              <span class="material-symbols-outlined">open_in_new</span>
+              <button class="btn btn--outline detail__btn-bookmark">
+                <span class="material-symbols-outlined btn__icon">open_in_full</span>
+                <span>Раскрыть</span>
+              </button>
+            </div>
+          </div>
+          <div class="detail__card-body">
+            <div class="detail__card-head">
+              <button class="btn btn--outline card__head-btn">
+                  <span class="material-symbols-outlined btn__icon">remove</span>
+                  <span>150</span>
+                  <span class="material-symbols-outlined btn__icon">add</span>
+              </button>
+              <button class="btn detail__card-forum">
+                <span class="material-symbols-outlined btn__icon">forum</span>
+                <span>6</span>
+              </button>
+            </div>
+            <p class="detail__card-date">Опубликовано 2 часа назад</p>
+            <div class="detail__desc">
+              <h4 class="detail__card-title">Набор инструментов Rockforce 24пр. 1/2" (6гр) RF-4245B-5(57881)</h4>
+              <ul class="detail__desc-list">
+                <li class="card__desc-item">
+                  <span class="detail__desc-price">1 509₽</span>
+                  <span class="detail__desc-discount">3 000₽</span>
+                  <span class="detail__desc-percent">(-50%)</span>
+                </li>
+              </ul>
+              <ul class="detail__desc-list">
+                <li class="detail__desc-item">
+                  <span class="detail__desc-company">Wildberries</span>
+                  <span class="detail__delivery">
+                    <span>скидки</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn--orange detail__btn-solde">
+              <span>К скидке</span>
+              <span class="material-symbols-outlined btn__icon">open_in_new</span>
+            </button>
+            <div class="detail__avatar">
+              <img class="detail__avatar-img" src="https://www.pepper.ru/assets/img/profile-listing-placeholder_fecff.png" alt="avatar">
+              <div class="detail__avatar-body">
+                <p class="detail__avatar-name">Поделился пользователь<span>Maestro_MGO</span></p>
+                <nav class="detail__avatar-nav">
+                  <a class="detail__avatar-link" href="#">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <span class="detail__avatar-text">В сообществе с 2022</span>
+                  </a>
+                  <a class="detail__avatar-link" href="#">
+                    <span class="material-symbols-outlined">sell</span>
+                    <span class="detail__avatar-text">65</span>
+                  </a>
+                  <a class="detail__avatar-link" href="#">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                    <span class="detail__avatar-text">2 546</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail__chats">
+          <h4 class="detail__chats-title">Подробнее о скидке</h4>
+          <p class="detail__chats-desc">Состав :сахар, какао масло, сухое обезжиренное молоко, изюм, какао тертое, молочный жир, лактоза, фундук дробленый, эмульгатор (соевый лецитин), ароматизатор (ванилин). может содержать незначительное количество глютена, миндаля.</p>
+          <p class="detail__chats-more">
+            Более подробная информация на сайте 
+            <a href="#">Мегамаркет <span class="material-symbols-outlined">open_in_new</span></a>
+          </p>
+          <button class="btn btn--outline detail__chats-btn">
+            <img src="https://www.pepper.ru/assets/img/social-icons/twitter_e000f.svg" alt="">
+            <span>Твит</span>
+          </button>
+          <nav class="detail__chats-nav">
+            <a href="#" class="detail__chats-nav-link">Продукты питания и Бытовая химия </a>
+            <a href="#" class="detail__chats-nav-link">Напитки</a>
+            <a href="#" class="detail__chats-nav-link">Безалкогольные напитки</a>
+            <a href="#" class="detail__chats-nav-link">Кофе</a>
+          </nav>
+          <div class="detail__chats-info">
+            <p>Отредактировано модератором, 2 дня назад</p>
+            <p>Если вы перейдете по ссылке или купите товар из публикации, Pepper может получить комиссию от магазина, но это никак не влияет на то, какие скидки публикуются на сайте. Больше информации в разделах <a href="#">FAQ</a> и <a href="3">О нас</a></p>
+          </div>
+          <nav class="detail__chats-bottom">
+            <a href="" class="detail__chats-bottom-link">
+              <span class="material-symbols-outlined">chat_bubble</span>
+              <span>Комментировать</span>
+            </a>
+            <a href="" class="detail__chats-bottom-link">
+              <span class="material-symbols-outlined">bookmark</span>
+              <span>Сохранить</span>
+            </a>
+          </nav>
+        </div>
+        <div class="detail__chats">
+          <h4 class="detail__chats-title">Оцените также</h4>
+          <div class="detail__chats-slider">
+              <div class="swiper chatSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/detail.html" class="detail__chats-card">
+                      <div class="detail__chats-card-picture">
+                        <img class="detail__chats-card-img" src="https://static.pepper.ru/threads/raw/dPF1N/497148_1/re/200x200/qt/55/497148_1.jpg" alt="" >
+                      </div>
+                      <div class="detail__chats-card-body">
+                        <p class="detail__chats-card-desc">Кофе Sapore Vero Perfetto Espresso в зёрнах 1 кг + 208 бонусов</p>
+                        <div class="detail__chats-card-item">
+                          <span class="detail__chats-card-price">1 509₽</span>
+                          <span class="detail__chats-card-discount">3 000₽</span>
+                          <span class="detail__chats-card-percent">(-50%)</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+          </div>
+        </div>
+        <div class="detail__chats">
+          <h4 class="detail__chats-title"><span>34</span> комментария отсортированы по <span>Сначала наиболее полезные</span></h4>
+          <div class="detail__chats-messenger">
+            <img class="detail__chats-badge" src="https://www.pepper.ru/assets/img/profile-comment-placeholder_1b5d6.png" alt="" >
+            <textarea class="detail__chats-input" name="" id="">Написать комментарий...</textarea>
+          </div>
+          <ul class="detail__chats-answer">
+            <li class="detail__chats-user">
+              <div class="detail__chats-profile">
+                <img class="detail__chats-profile-img" src="https://www.pepper.ru/assets/img/profile-comment-placeholder_1b5d6.png" alt="" >
+                <div class="detail__chats-profile-name">
+                  <h6>DemaPupkin</h6>
+                  <span>3 ч, 29 м назад</span>
+                </div>
+              </div>
+              <div class="detail__chats-profile-comment">
+                применился .
+                весной купил прем за 600 руб .
+                он же и прем мтс - держу в курсе
+              </div>
+              <nav class="detail__chats-bottom detail__chats-bottom--messenger">
+                <a href="" class="detail__chats-bottom-link">
+                  <span class="material-symbols-outlined">thumb_up</span>
+                  <span>Лайк</span>
+                </a>
+                <a href="" class="detail__chats-bottom-link">
+                  <span class="material-symbols-outlined">reply</span>
+                  <span>Ответ</span>
+                </a>
+              </nav>
+            </li>
+            <li class="detail__chats-user">
+              <div class="detail__chats-profile">
+                <img class="detail__chats-profile-img" src="https://www.pepper.ru/assets/img/profile-comment-placeholder_1b5d6.png" alt="" >
+                <div class="detail__chats-profile-name">
+                  <h6>DemaPupkin</h6>
+                  <span>3 ч, 29 м назад</span>
+                </div>
+              </div>
+              <div class="detail__chats-profile-comment">
+                применился .
+                весной купил прем за 600 руб .
+                он же и прем мтс - держу в курсе
+              </div>
+              <nav class="detail__chats-bottom detail__chats-bottom--messenger">
+                <a href="" class="detail__chats-bottom-link">
+                  <span class="material-symbols-outlined">thumb_up</span>
+                  <span>Лайк</span>
+                </a>
+                <a href="" class="detail__chats-bottom-link">
+                  <span class="material-symbols-outlined">reply</span>
+                  <span>Ответ</span>
+                </a>
+              </nav>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__top">Мы можем получать комиссию, когда вы переходите по ссылкам или совершаете покупки. Благодаря этому наша платформа остается бесплатной и нейтральной. Независимо от того, получаем ли мы комиссию, это никак не влияет на температуру скидок. Мы считаем, что только наше сообщество должно решать, какие скидки горячие, а какие — холодные.</p>
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+                <h4 class="footer__list-title">
+                  <span>Компания</span>
+                  <span class="material-symbols-outlined footer__list-title-icon">keyboard_arrow_down</span>
+                </h4>
+            </li>
+            <div class="footer__sublist">
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">О нас</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Наша команда</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Карьера</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Стать партнером</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Связаться с нами</a>
+              </li>
+            </div>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+                <h4 class="footer__list-title">
+                  <span>Сообщество</span>
+                  <span class="material-symbols-outlined footer__list-title-icon">keyboard_arrow_down</span>
+                </h4>
+            </li>     
+            <div class="footer__sublist">
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">FAQ: вопросы и ответы</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Правила и Кодекс поведения</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Присоединяйтесь к нам</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link"> Обратная связь </a>
+              </li>
+            </div>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+                <h4 class="footer__list-title">
+                  <span>Условия использования</span>
+                  <span class="material-symbols-outlined footer__list-title-icon">keyboard_arrow_down</span>
+                </h4>
+            </li>
+            <div class="footer__sublist">
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Политика Конфиденциальности</a>
+              </li>
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">Пользовательское соглашение</a>
+              </li>
+            </div>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+                <h4 class="footer__list-title">
+                  <span>Мы в соцсетях</span>
+                  <span class="material-symbols-outlined footer__list-title-icon">keyboard_arrow_down</span>
+                </h4>
+            </li>
+            <div class="footer__sublist">
+              <li class="footer__list-item">
+                  <a href="/" class="footer__list-link">VK</a>
+                  <a href="/" class="footer__list-link"></a>
+                  <a href="/" class="footer__list-link"></a>
+                  <a href="/" class="footer__list-link"></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <nav class="footer__bottom-nav">
+            <a href="/" class="footer__bottom-link">© 1996-2022, Amazon.com, Inc. or its affiliates</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <section>
+      <div class="modal" id="modal-add">
+        <div class="modal__outer">
+          <div class="modal__inner">
+            <span class="material-symbols-outlined modal__btn-close">close</span>
+            <h2 class="modal__title">Войти через социальные сети</h2>
+            <button class="btn btn--outline modal__social-btn">
+              <img src="https://www.pepper.ru/assets/img/social-icons/facebook_6853e.svg" alt="">
+              <span class="btn__text">Войти через Facebook</span>
+            </button>
+            <button class="btn btn--outline modal__social-btn">
+              <img src="https://www.pepper.ru/assets/img/social-icons/google_e6956.svg" alt="">
+              <span class="btn__text">Войти через Google</span>
+            </button>
+            <button class="btn btn--outline modal__social-btn">
+              <img src="https://www.pepper.ru/assets/img/social-icons/apple_6ecdb.svg" alt="">
+              <span class="btn__text">Войти через Apple</span>
+            </button>
+            <h2 class="modal__title">Войти</h2>
+            <div class="input-text modal__input-box">
+              <label for="input1" class="input-text__label">Войти Имя пользователя или Адрес <br/> электронной почты</label>
+              <input id="input1" type="text" class="input-text__field" placeholder="Иванов иванович...">
+            </div>
+            <div class="input-text modal__input-box">
+              <label for="input1" class="input-text__label">Войти Имя пользователя или Адрес <br/> электронной почты</label>
+              <input id="input1" type="text" class="input-text__field" placeholder="Иванов иванович...">
+            </div>
+            <label class="input-checkbox modal__social-check" for="check5">
+              <input type="checkbox" id="check5" class="input-checkbox__input">
+              <span class="input-checkbox__input-box">
+                <span class="material-symbols-outlined input-checkbox__input-icon">check_small</span>
+              </span>
+              <span>Запомнить меня на этом устройстве</span>
+            </label>
+            <button class="btn btn--orange modal__social-btn">
+              <span class="btn__text">Войти</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal" id="modal-register">
+        <div class="modal__outer">
+          <div class="modal__inner">
+            <span class="material-symbols-outlined modal__btn-close">close</span>
+            <h2 class="modal__title">Войти через социальные сети</h2>
+            <button class="btn btn--outline modal__social-btn">
+              <img src="https://www.pepper.ru/assets/img/social-icons/facebook_6853e.svg" alt="">
+              <span class="btn__text">Войти через Facebook</span>
+            </button>
+            <button class="btn btn--outline modal__social-btn">
+              <img src="https://www.pepper.ru/assets/img/social-icons/google_e6956.svg" alt="">
+              <span class="btn__text">Войти через Google</span>
+            </button>
+            <button class="btn btn--outline modal__social-btn">
+              <img src="https://www.pepper.ru/assets/img/social-icons/apple_6ecdb.svg" alt="">
+              <span class="btn__text">Войти через Apple</span>
+            </button>
+            <h2 class="modal__title">Войти</h2>
+            <div class="input-text modal__input-box">
+              <label for="input1" class="input-text__label">Войти Имя пользователя или Адрес <br/> электронной почты</label>
+              <input id="input1" type="text" class="input-text__field" placeholder="Иванов иванович...">
+            </div>
+            <div class="input-text modal__input-box">
+              <label for="input1" class="input-text__label">Войти Имя пользователя или Адрес <br/> электронной почты</label>
+              <input id="input1" type="text" class="input-text__field" placeholder="Иванов иванович...">
+            </div>
+            <label class="input-checkbox modal__social-check" for="check6">
+              <input type="checkbox" id="check6" class="input-checkbox__input">
+              <span class="input-checkbox__input-box">
+                <span class="material-symbols-outlined input-checkbox__input-icon">check_small</span>
+              </span>
+              <span>Запомнить меня на этом устройстве</span>
+            </label>
+            <button class="btn btn--orange modal__social-btn">
+              <span class="btn__text">Войти</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
